@@ -4,21 +4,21 @@ import ModelContainer from "@/components/hero/modelContainer";
 import Tooltips from "@/components/hero/tooltips";
 import Outro from "@/components/hero/outro";
 
-import Intro from "@/components/intro";
-import HomePage from "./home";
-import App from "./journey";
-import OverView from "./overview";
 
 
-export default function Home() {
+
+export default function OverView() {
   return (
     <main className="min-h-screen overflow-hidden">
-      <HomePage/>
+      
 
-      <OverView/>
+      <ProductOverview>
+        <ModelContainer />
+        <Tooltips />
+      </ProductOverview>
 
       <Outro />
-      <App/>
     </main>
   );
 }
+
